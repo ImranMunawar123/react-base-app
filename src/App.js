@@ -8,16 +8,21 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Automation has been implemented in React App
         </p>
+        <p 
+        style={{fontSize: "15px"}}
+        >
+        <span>By: </span> 
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://pk.linkedin.com/in/imran-munawar-09aa83118"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+           Imran Munawar
         </a>
+        </p>
       </header>
     </div>
   );
