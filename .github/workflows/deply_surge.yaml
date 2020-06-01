@@ -25,13 +25,22 @@ jobs:
     # Runs a single command using the runners shell
       
     # Install Node Js
-      
     - name: Install NodeJs
       uses: actions/setup-node@v2-beta
       with:
         node-version: 12
-        
-    # Install Surge if: 
+    
+    # Install Yarn: 
+    - name: Install Yarn
+      uses: borales/actions-yarn@v2.0.0
+      with: 
+        cmd: install # will run `yarn install` command
+      
+    # Build React App: 
+    - name: Build React App
+      run: yarn build
+      
+    # Install Surge: 
     - name: Install Surge
       run: npm install -g surge
       
